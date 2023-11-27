@@ -1,0 +1,1369 @@
+
+/* You can add global styles to this file, and also import other style files */
+
+
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+body{
+    background-color: black;
+    position: relative;
+}
+
+.header{
+
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,7)),url(assets/girişbg.jpg);
+  background-size: cover;
+  background-position: center;
+  padding:10px 8%;
+  position: relative;
+}
+
+.default{
+    width:100%;
+}
+
+
+@media (max-width: 600px){
+  .btn label{
+    display: none;
+  }
+  .btn{
+    width:50%;
+  }
+
+  .logo{
+    width:100px;
+  }
+
+ .header-content{
+  width:70%;
+  justify-content: center;
+  text-align: center;
+ }
+
+ .header-content h3{
+  font-size: 18px;
+ }
+
+ .header-content h1{
+  font-size: 12px;
+ }
+
+ .search1 input{
+  width:95%;
+  height: 45px;
+ 
+ }
+
+ .search1 button{
+  width:50%;
+  height: 45px;
+ }
+
+  
+}
+
+.lang-menu{
+  width:50px;
+}
+.container1 {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Siyah ve %50 transparanlık */
+  }
+
+  .logo{
+    max-width:150px;
+   cursor:pointer;
+
+  }
+
+  
+
+  nav {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+
+   
+    
+   
+  }
+
+  .email-signup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .header-content{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+    margin-top:25px;
+  }
+  .header-content h1{
+    font-size: 60px ;
+    line-height:70px;
+    font-weight:600;
+    max-width:650px;
+    color:white;
+  }
+  .header-content h3{
+    font-weight:400;
+    margin-top: 20px;
+    color:white;
+  
+  }
+  .header-content p{
+    color:white;
+  }
+  
+.features{
+  padding: 50px 12%;
+  font-size: 22px;
+}
+.row{
+  display: flex;
+  width:100%;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px 0;
+}
+.text-col{
+  flex-basis:50%;
+  margin-bottom: 20px;
+}
+.img-col{
+  flex-basis:50%;
+  margin-bottom: 20px;
+}
+.img-col{
+  display:block;
+  width:90% ;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  /* 768 piksel ve altındaki ekranlar için stil ayarı */
+  .features {
+    padding: 10px;
+  }
+}
+
+
+.features h2{
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom:20px ;
+  color:white;
+
+}
+
+.features p{
+  color:white;
+}
+
+  u {
+    display: inline-flex;
+    align-items: center;
+  }
+  i{
+    color:aliceblue;
+  }
+
+  .selected-lang
+  {
+    cursor:pointer;
+    color:aliceblue;
+  }
+  
+header{
+    margin-top: -10px;
+}
+
+
+
+  /* 
+^ Styling the drop-down menu for language switcher
+* Auther : Fadi Nouh
+* URL : https://bluebit.dev
+* Repository: https://github.com/bluebits-academy/language-switcher
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css');
+
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+
+.lang-menu {
+    width: 100px;
+    text-align: right;
+    font-weight: bold;
+    margin-top: 25px;
+    position: relative;
+    margin-right: 135px;
+}
+.lang-menu .selected-lang {
+    display: flex;   
+    justify-content: space-between;
+    line-height: 2;
+    cursor: pointer;
+}
+.lang-menu .selected-lang:before {
+    content: '';
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-image: url(https://www.countryflags.io/us/flat/32.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.lang-menu ul {
+    margin: 0;
+    padding: 0;
+    display: none;
+    background-color: #fff;
+    border: 1px solid #f8f8f8;
+    position: absolute;
+    top: 45px;
+    right: -50px;
+    width: 150px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+}
+
+
+.lang-menu ul li {
+    list-style: none;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lang-menu ul li a {
+    text-decoration: none;
+    width: 125px;
+    padding: 5px 10px;
+    display: block;
+}
+
+.lang-menu ul li:hover {
+    background-color: #f2f2f2;
+}
+
+.lang-menu ul li a:before {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    margin-right: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.de:before {
+    background-image: url(https://www.countryflags.io/de/flat/32.png);
+}
+
+.en:before {
+    background-image: url(https://www.countryflags.io/us/flat/32.png);
+}
+.fr:before {
+    background-image: url(https://www.countryflags.io/fr/flat/32.png);
+}
+
+.ar:before {
+    background-image: url(https://www.countryflags.io/ae/flat/32.png);
+}
+
+
+
+
+.bi{
+  margin-top: -5px;
+  margin-left: -7px;
+  
+}
+
+
+.fa-caret-down{
+    margin-top: 9px;
+    margin-left: 115px;
+    position:absolute;
+    
+
+}
+
+.selected-lang p{
+    margin-right: 55px;
+}
+.selected-lang {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 150px;
+    height: 40px;
+    border: 0.1px solid rgb(78, 72, 72);
+    border-radius: 5px;
+    
+  }
+  .lang-menu{
+    margin-top: -40px;
+  }
+  
+  .selected-lang::before {
+    content: "";
+    position: fixed;
+ 
+  
+   
+  }
+  
+  .selected-lang:hover {
+    border-color: white;
+  }
+  
+  .selected-lang:hover::before {
+    border-color: white;
+  }
+
+  .oturumbtn p{
+    color:white;
+    margin-top: 6px;
+  }
+
+  .oturumbtn{
+    margin-left:120px;
+    width:100px;
+    position: absolute;
+    display: flex;
+    margin-top: -40px;
+    height: 40px;
+    background-color: red;
+    font-weight: bold;
+    border-radius: 5px;
+    border-color: none;
+   
+  }
+
+  .oturumbtn:hover{
+    background-color: rgba(210, 14, 14, 0.742);
+   
+  }
+
+  .mid h1{
+    color:white;
+    margin: auto;
+    text-align: center;
+    margin-top: 148px;
+    font-weight: bold;
+    font-size: 55px;
+  }
+
+  .mid p{
+    color:white;
+    margin: auto;
+    text-align: center;
+    margin-top: 30px;
+    
+    width:900px;
+    font-family:sans-serif;
+    font-size: 25px;
+  }
+
+  .mid h4{
+    color:white;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    
+    width:1000px;
+    font-family:sans-serif;
+    font-size: 20px;
+    
+  }
+
+  .searchTerm{
+    width:409px;
+    height:55px;
+    
+    background-color: rgba(0, 0, 0, 0.5);
+    
+    border: 0.1px solid rgb(78, 72, 72);
+    border-radius: 5px;
+    color:#f2f2f2;
+
+    
+}
+
+.searchButton{
+    width:166px;
+    height:55px;
+    background-color: red;
+    color:white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 1rem;
+
+}
+
+.search{
+
+ 
+    
+
+}
+
+
+
+  .page-2 h1{
+
+    color:white;
+   
+    width: 600px;
+    margin-top: 148px;
+    font-weight: bold;
+    font-size: 55px;
+
+  }
+
+  .page-2 h3{
+
+    color:white;
+   
+    width: 600px;
+    margin-top: 45px;
+    
+    font-size: 25px;
+
+  }
+
+  
+
+  .default-ltr-cache-1d3w5wq{
+    
+    margin-left: 200px;
+    margin-bottom: 250px;
+    position: sticky;
+  width:35rem;
+  
+    
+    
+    
+  }
+  .default-ltr-cache-1d3w5wq1{
+    margin-left: 578px;
+    margin-top:-0px;
+    position: sticky;
+    width:735px;
+    
+    
+  }
+
+  
+
+  .page-2{
+    margin-left: 185px;
+    height:451px;
+  }
+
+  .default-ltr-cache-m5f3qu{
+    margin-left: 270px;
+    margin-top:-600px;
+    z-index: -1;
+   
+   
+    
+    
+   
+   
+  }
+
+  .page-3 h1{
+
+    color:white;
+   
+    width: 600px;
+    margin-top: 52px;
+    font-weight: bold;
+    font-size: 55px;
+    font-family:Arial, Helvetica, sans-serif;
+
+  }
+
+  .page-3 h3{
+
+    color:white;
+   
+    width: 600px;
+    margin-top: 45px;
+    
+    font-size: 25px;
+
+  }
+  .phone{
+    position: absolute;
+    background-color: black;
+    
+    border: 3px solid rgb(78, 72, 72);
+    border-radius: 18px;
+  width:20%;
+  
+
+  }
+
+  .phone h5{
+    color:white;
+    text-align: center;
+    margin-top: -56px;
+    font-size: 17px;
+
+  } 
+  .phone p{
+    color:blue;
+    font-weight: bold;
+    text-align: center;
+    margin-left: -55px;
+    margin-top: -7px;
+    font-size: smaller;
+
+
+  }
+
+  .page-3{
+    margin-left: 755px;
+    height:451px;
+    margin-top: -500px;
+    position: sticky;
+    width:319px;
+    
+
+    
+
+  }
+
+  .page-3 h1{
+    margin-top: 200px;
+  }
+
+  .default-pic{
+    
+  
+
+  }
+  .default-str{
+   height:75px;
+   margin-top: 9px;
+   margin-left: 9px; 
+
+  }
+  .default-ltr-cache-1q4up1i{
+    width:345px;
+  }
+
+  .down{
+    margin-top: -106px;
+   margin-left: 210px; 
+   width:90px;
+  }
+
+  .phone{
+    margin-top: 360px;
+    margin-left: 200px; 
+  }
+  
+
+
+  .default-ltr-cache-1626rqb{
+    
+  
+    margin-top: -491px;
+    margin-left: 706px; 
+    
+  }
+
+  .last-page h1{
+
+    color:white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 55px;
+
+  }
+
+  .last-page {
+
+    padding: 10px 12%;
+    text-align: center;
+    font: size 18px;
+    color:white;
+
+  }
+
+  .menu{
+
+    margin:60px auto;
+    width: 100%;
+    max-width: 750px;
+
+  }
+
+  .menu li{
+
+    list-style: none;
+    width:100%;
+    padding: 5px;
+
+    
+  }
+
+  .menu li label{
+    display:flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor:pointer;
+    position: relative;
+    }
+
+
+
+  label::after{
+
+   
+    font-size:34px;
+    position: absolute;
+    right:20px;
+    transition: transform 0.5s;
+  }
+
+  input[type="radio"]
+  {
+    display:none;
+
+  }
+
+  .menu .content{
+
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+  }
+
+  .menu input[type="radio"]:checked + label+ .content{
+
+    max-height: 600px;
+    padding: 30px 20px;
+  }
+
+  .menu input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+  }
+
+  .menu input[type="checkbox"]:checked + label::after{
+    transform: rotate(135deg);
+  }
+
+  .menu input[type="checkbox"]:checked + label+ .content{
+
+    max-height: 600px;
+    padding: 30px 20px;
+  }
+
+
+ 
+
+.search1{
+  
+}
+small{
+  font-size: 18px;
+}
+
+.footer{
+  padding:50px 15% 10px;
+  border-top:6px solid #303030;
+  color: #cec8c8;
+
+}
+.wrapper{
+  padding:50px 15% 10px;
+  border-top:6px solid #303030;
+  color: #cec8c8;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px; /* Maksimum genişlik ayarlayın, istediğiniz değeri kullanabilirsiniz */
+  margin-right:-2200px; /* İçeriği ortalamak için kullanabilirsiniz */
+  text-align: left;
+}
+
+.child h1{
+  font-size: 44px;
+  font-weight: bold;
+}
+
+.child .default-pic1 {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+
+  
+}
+
+
+
+.child .download{
+
+  flex-direction: column;
+  display: flex;
+  max-width: 20%;
+ z-index: 1;
+ margin-top: -170px;
+ margin-left: 320px;
+ height: auto;
+ align-items: center;
+
+}
+@media screen and (min-width: 600px) {
+  .wrapper {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .child {
+    flex: 0 0 calc(50% - 40px);
+    margin: 20px;
+  }
+
+  
+}
+
+
+.last-page{
+  padding:50px 15% 10px;
+  border-top:6px solid #303030;
+  color: #cec8c8;
+}
+
+.footer h2{
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom:30px;
+}
+.footer .col{
+  flex-basis:25%;
+  flex-grow:1;
+  margin-bottom:20px;
+} 
+.footer .col a{
+  display: block;
+  text-decoration:none ;
+  color:#cec8c8;
+  font-size:14px;
+  margin-bottom:10px;
+  text-decoration: underline;
+
+}
+.footer .row{
+  align-items:flex-start;
+  padding:10px 0;
+}
+
+.footer h2 a{
+  color:#cec8c8;
+  text-decoration: underline;
+
+}
+.btn{
+    
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.btn1{
+    
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.btn:focus{
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    border-width: 3px !important;
+    border-color: #f2f2f2;
+}
+
+.btn:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.acbut{
+  border-color: #303030;
+ 
+}
+
+.accordion-item {
+ 
+  margin:auto;
+  margin-bottom: 10px; 
+  width:1120px;
+  border: radius 0%;
+  background-color:#303030;
+  border-color:#303030;
+  
+}
+
+.accordion-header{
+  height: 80px;
+  border-radius: 0%;
+  background-color:#303030;
+  
+ 
+
+}
+.accordion-header button{
+
+  -webkit-text-fill-color: #f2f2f2;
+  text-align:start;
+  font-size: 24px;
+  width:1090px;
+  height: 80px;
+  background-color:#303030;
+  border:none;
+}
+
+
+.accordion-header button::after{
+
+  content:'+';
+  
+  position:absolute;
+  margin-right: 204px;
+  font-size:64px;
+  right:20px;
+  transition: transform 0.5s;
+  font-weight: 100;
+  margin-top: -34px;
+}
+
+.accordion-header button.rotate::after {
+  transform: rotate(135deg); /* Rotate 135 degrees on button click */
+}
+
+
+
+
+
+
+.accordion-body{
+  border-top: 3px solid black;
+  color:white;
+  text-align: left;
+  font-size: 24px;
+  
+}
+
+.accordion-header {
+  position: relative;
+}
+
+
+
+.accordion__btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color:#303030;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  width: 80%;
+  text-align: left;
+  margin:auto;
+  height: 5rem;
+  
+  font-family: sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color:white;
+
+  border-bottom: 3px solid black;
+}
+
+.accordion__content {
+  display: block;
+  
+  background-color: black;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out; /* Adjust the duration (e.g., 0.5s) to your desired speed */
+  transform-origin: top; /* Set the transform-origin to the top for smooth animation */
+ 
+
+}
+
+
+.show {
+  max-height: 1000px; /* Set the maximum height to a sufficiently large value */
+}
+
+.cont{
+  display: flex;
+  margin: auto;
+  width:80%;
+  background-color: #303030;
+  height: 13rem;
+ 
+}
+
+.accordion__icon {
+  transition: transform 0.3s ease;
+  font-size: 50px;
+  
+  font-weight: 300; /* Daha ince bir değer deneyebilirsiniz (örn. 300, 200, 100) */
+}
+  
+  
+
+.cont p{
+  padding-left: 10px;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color:white;
+  text-align: left;
+}
+
+.rotate {
+  transform: rotate(135deg);
+}
+
+.show {
+  display: block;
+}
+
+
+.child3 .download3{
+
+  flex-direction: column;
+  display: flex;
+  max-width: 12%;
+  z-index: 1;
+  margin-top: -290px;
+  margin-left: 90px;
+  height: auto;
+  align-items: center;
+  
+  }
+  
+  .wrapper3{
+    padding:50px 15% 10px;
+    border-top:6px solid #303030;
+    color: #cec8c8;
+  }
+  
+  .wrapper3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .child3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px; /* Maksimum genişlik ayarlayın, istediğiniz değeri kullanabilirsiniz */
+    margin: 0 auto; /* İçeriği ortalamak için kullanabilirsiniz */
+    text-align: left;
+    
+  }
+  
+  .child3 h1{
+    font-size: 44px;
+    font-weight: bold;
+  }
+  
+  .child3 h1{
+    font-size: 48px;
+  }
+/* Medya sorguları */
+@media screen and (min-width: 850px) {
+  .wrapper3 {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .child3 {
+    
+    
+    margin: 20px;
+  }
+
+  .child3 h1{
+    font-size: 32px;
+  }
+  
+  
+  
+} 
+
+
+
+
+.wrapper5 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  padding:25px 10% 10px;
+    border-top:6px solid #303030;
+ 
+}
+
+.child5 {
+  flex: 1 1 45%;
+  max-width: 45%;
+  padding: 1rem;
+  transition: all 0.3s ease; /* Animasyon için geçiş süresi ve türü */
+}
+
+.tv55 {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  transition: all 0.3s ease; /* Animasyon için geçiş süresi ve türü */
+}
+
+
+.tv55 img {
+  width: 100%;
+  height: auto;
+  margin-left: -8%;
+ 
+}
+
+.tv55 video {
+  position: absolute;
+  top:30px;
+  left:9%;
+  width: 65%;
+  height: auto;
+  z-index: -1;
+}
+
+.child5 h1{
+  font-size: 48px;
+}
+
+/* Ekran küçüldüğünde stil değişikliği */
+@media screen and (max-width: 858px) {
+  .wrapper5 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .child5 {
+    max-width: 100%;
+    text-align: center;
+  }
+  .child5 h1{
+    font-size: 32px;
+  }
+
+  .child5 h3{
+    font-size: 17px;
+  }
+  .tv55 {
+    max-width: 100%;
+    margin: auto;
+  }
+
+  .tv55 video{
+
+    top:35px;
+    left:14%;
+  }
+
+
+ 
+
+ 
+
+ 
+}
+
+
+
+
+
+
+.child3 .sleep{
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+
+}
+
+.child3 .tv3{
+
+  margin-bottom: 100px;
+  margin-right: 233px;
+  
+}
+
+.child3 .tv4{
+
+  margin-bottom: 280px;
+  margin-right: 633px;
+}
+
+
+
+.wrapper4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  padding:25px 10% 10px;
+    border-top:6px solid #303030;
+ 
+}
+
+.child4 {
+  flex: 1 1 45%;
+  max-width: 45%;
+  padding: 1rem;
+  transition: all 0.3s ease; /* Animasyon için geçiş süresi ve türü */
+}
+
+.tv344 {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  transition: all 0.3s ease; /* Animasyon için geçiş süresi ve türü */
+}
+
+.tv344 img {
+  width: 100%;
+  height: auto;
+ 
+}
+
+.tv344 video {
+  position: absolute;
+  top: 3.5rem;
+  left: 3rem;
+  width: 80%;
+  height: auto;
+  z-index: -1;
+}
+.child4 h1{
+  font-size: 52px;
+  
+}
+
+/* Ekran küçüldüğünde stil değişikliği */
+@media screen and (max-width: 1050px) {
+  .wrapper4 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .child4 {
+    max-width: 100%;
+    text-align: center;
+    
+  }
+
+  .child4 h1{
+    font-size: 32px;
+    
+  }
+  .child4 h3{
+    font-size: 17px;
+    
+  }
+
+  .tv344 {
+    max-width: 100%;
+    margin: auto;
+  }
+
+  .tv344 video{
+
+    top:35px;
+    left:35px;
+  }
+
+ 
+}
+
+.wrapper6 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  padding:25px 10% 10px;
+    border-top:6px solid #303030;
+ 
+}
+
+.child6 {
+  flex: 1 1 45%;
+  max-width: 45%;
+  padding: 1rem;
+  transition: all 0.3s ease; /* Animasyon için geçiş süresi ve türü */
+}
+
+.tv6 {
+  position: relative;
+  width: 80%;
+  overflow: hidden;
+  transition: all 0.3s ease; /* Animasyon için geçiş süresi ve türü */
+}
+
+.tv6 img {
+  width: 100%;
+  height: auto;
+ 
+}
+
+.tv6 .download6 {
+  position: absolute;
+  top: 65%;
+  left: 75%;
+  width: 15%;
+  height: auto;
+  z-index: 1;
+}
+.child6 h1{
+  font-size: 43px;
+ }
+
+
+/* Ekran küçüldüğünde stil değişikliği */
+@media screen and (max-width: 850px) {
+  .wrapper6 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .child6 {
+    max-width: 100%;
+    text-align: center;
+  }
+  .child6 h1{
+   font-size: 32px;
+  }
+
+  .child6 h3{
+    font-size: 17px;
+   }
+
+  .tv6 {
+    max-width: 100%;
+    margin: auto;
+  }
+
+  .tv6 .download6{
+
+    top:68%;
+    left:75%;
+  }
+
+
+ 
+
+ 
+}
+
+
+
+@media screen and (max-width: 850px){
+
+  .last-page h1{
+    font-size: 23px;
+  }
+  .accordion__btn{
+    font-size: 16px;
+    font-weight: lighter;
+  }
+
+  .accordion span{
+    font-size: 20px;
+  }
+
+  .cont p{
+    font-size: 16px;
+    font-weight: lighter;
+  }
+
+  .cont{
+    height: 27rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

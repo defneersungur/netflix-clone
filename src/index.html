@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Showtime</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+  <app-root></app-root>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+<div class="header">
+
+  <nav>
+    <img src="assets/netflix-logo-0.png" alt="" class="logo">
+  <div>
+    <div >
+      <a href="#"><img src="https://bluebits.dev/wp-content/uploads/2020/06/cropped-logo-1.png" alt=""></a>
+  </div> 
+  <div class="lang-menu">
+    
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+       <label for=""><i class="bi bi-globe"></i></label> 
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
+          <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/>
+        </svg> <label for="">Türkçe</label>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Türkçe</a></li>
+  
+        <li><a class="dropdown-item" href="#">English</a></li>
+      </ul>
+      <button class="oturumbtn"><p>Oturum Aç</p></button>
+       
+    </div>
+  </div>
+  
+  </nav>
+
+
+  <div class="header-content">
+
+  
+      <h1>Âlâsı var!</h1>
+
+    
+    <h3 style="font-weight: lighter; font-size: 25px;">En iyi dizi, film, belgesel ve çok daha fazlası burada.</h3>
+    <h3 style="font-weight: lighter; font-size: 20px;">İzlemeye hazır mısınız? Üye olmak ya da hesabınıza tekrar ulaşmak için tek yapmanız gereken e-posta adresinizi girmek.</h3>
+<br>
+
+    <form class="email-signup">
+      <div class="wrap">
+        <div class="search1">
+          <input type="text" class="searchTerm" placeholder="E-posta adresi">
+          <button type="submit" class="searchButton">Başlayın
+            
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-mirrorinrtl="true" class="default-ltr-cache-0 e1mhci4z1" data-name="ChevronRight" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.5859 12L8.29303 19.2928L9.70725 20.7071L17.7072 12.7071C17.8948 12.5195 18.0001 12.2652 18.0001 12C18.0001 11.7347 17.8948 11.4804 17.7072 11.2928L9.70724 3.29285L8.29303 4.70706L15.5859 12Z" fill="currentColor"></path></svg>
+          </button>
+        </div>
+      </div>
+
+    </form>
+  </div>
+
+</div>
+</div>
+
+    
+
+    
+
+
+
+    <div class="wrapper4">
+          
+          
+      <div class="child4">
+        <div class="yazzi">
+
+          <h1 style="color: white; margin-top: 65px;font-weight:bolder;">Televizyonunuzda izleyin</h1>
+        </div>
+        <h3 style="color: white;">Akıllı TV, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray oynatıcılar ve daha fazlasında seyredin.</h3>
+      </div>
+      <div class="child4">
+        <div class="tv344">
+
+            <img alt="" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" data-uia="nmhp-card-animation-asset-image" class="tw">
+            <div data-uia="nmhp-card-animation-asset-motion" class=""><video data-uia="nmhp-card-animation-asset-video" autoplay="" playsinline="" muted="" loop="" ><source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v" type="video/mp4"></video><div class="default-ltr-cache-0"></div><div data-uia="nmhp-card-animation-asset-custom" aria-hidden="true" class="" ></div></div>
+        </div>
+    </div>
+    </div>
+    
+    
+    <body>
+
+      <div class="wrapper6">
+              
+              
+              
+        <div class="child6">
+          <div class="tv6">
+    
+            <img src="assets/stranger.png" alt="" style="" class="eleven6">
+            <img src="assets/download-icon.gif" alt="" class="download6">
+          </div>
+      </div>
+      <div class="child6">
+        <h1 style="color: white;font-weight:bolder;">Çevrimdışı izlemek için içerikleri indirin</h1>
+        <h3 style="color: white;">En sevdiğiniz içerikleri kolayca kaydedin ve her zaman izleyecek bir şeyleriniz olsun.</h3>
+      </div>
+      </div>
+    
+      
+
+
+    
+
+    
+    
+
+
+
+   
+
+    <div class="wrapper5">
+          
+          
+      <div class="child5">
+        <h1 style="color: white;margin-top: 65px;font-weight:bolder;">İstediğiniz her yerde izleyin</h1>
+        <h3 style="color: white;">Telefonda, tablette, bilgisayarda, televizyonda sınırsız film ve dizi izleyin.</h3>
+      </div>
+      <div class="child5">
+        <div class="tv55">
+
+          <img alt="" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png" data-uia="nmhp-card-animation-asset-image" class="">
+  
+          <div data-uia="nmhp-card-animation-asset-motion" class=""><video data-uia="nmhp-card-animation-asset-video" autoplay="" playsinline="" muted="" loop=""><source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices.m4v" type="video/mp4"></video><div class="default-ltr-cache-0"></div><div data-uia="nmhp-card-animation-asset-custom" aria-hidden="true" class=""></div></div>
+    </div>
+    </div>
+    </div>
+
+    
+        
+            
+              
+
+   
+
+
+ 
+  
+  
+   
+
+   
+
+    
+    <div class="wrapper3">
+      <div class="child3">
+        <img alt="" src="https://occ-0-7331-1490.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABf9FUgiWN4GTIJexNEV8ZW_SPzGYmxKo7TaBfIoriNNfn85AMMEcvM61PwQ-NhPzGXz2qu53lDDcCuf0rH9FWOYBpvhUc2dQxIAQ.png?r=533" data-uia="nmhp-card-animation-asset-image" class="sleep">
+        
+      </div>
+      
+      <div class="child5">
+        <h1 style="color: white;margin-top: 65px; font-weight:bolder;">Çocuklarınız için profiller oluşturun</h1>
+        <h3 style="color: white;">Üyeliğinize dâhil olan bu ücretsiz deneyim sayesinde çocuklarınız, sadece onlara özel bir alanda en sevdikleri karakterlerle maceralara atılabilir.</h3>
+      </div>
+    </div>
+    <div class="grey-line"></div>
+    
+   <div class="last-page">
+    <h1>Sıkça Sorulan Sorular</h1>
+
+    <div class="accordion">
+      <button class="accordion__btn">Netflix nedir? <span class="accordion__icon">+</span></button>
+      <div class="accordion__content">
+        <div class="cont">
+          <p>Netflix; internet bağlantılı binlerce cihazda ödüllü diziler, filmler, animeler, belgeseller ve daha fazlasını içeren geniş bir arşiv sunan bir streaming hizmetidir.
+  
+            <br><br>Tek bir reklam olmadan, istediğiniz kadar, istediğiniz zaman izleyebilirsiniz - hepsi aylık düşük bir ücret karşılığında. Her zaman keşfedilecek yeni bir şeyler var, üstelik her hafta yeni diziler ve filmler ekleniyor!</p>
+  
+        </div>
+      </div>
+    </div>
+  <br>
+    <div class="accordion">
+      <button class="accordion__btn">Netflix' in maliyeti nedir?<span class="accordion__icon">+</span></button>
+      <div class="accordion__content">
+        <div class="cont">
+          <p>Netflix'i akıllı telefonunuz, tabletiniz, Akıllı TV'niz, dizüstü bilgisayarınız veya yayın cihazınızda sabit bir aylık ücretle izleyin. Aylık plan ücretleri 63,99 TL ile 130,99 TL arasında değişmektedir. Ekstra maliyet yok, sözleşme yok.</p>
+  
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="accordion">
+      <button class="accordion__btn">Nerede izleyebilirim?<span class="accordion__icon">+</span></button>
+      <div class="accordion__content">
+        <div class="cont">
+          <p>İstediğiniz yerde, istediğiniz zaman izleyin. Bilgisayarınızda netflix.com adresinden veya akıllı TV'ler, akıllı telefonlar, tabletler, medya oynatıcılar ve oyun konsolları dahil Netflix uygulamasını sunan, internet bağlantılı herhangi bir cihazda anında izlemek için Netflix hesabınızla oturum açın.
+  <br><br>
+            Favori içeriklerinizi iOS, Android veya Windows 10 uygulamasıyla da indirebilirsiniz. Seyahatteyken ve internet bağlantısı olmadan izlemek için indirilenleri kullanın. Netflix'i her yere beraberinizde götürün.</p>
+  
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="accordion">
+      <button class="accordion__btn">Nasıl iptal edebilirim?<span class="accordion__icon">+</span></button>
+      <div class="accordion__content">
+        <div class="cont">
+          <p>Netflix esnektir. Sinir bozucu hiçbir sözleşme ve taahhüt yoktur. Hesabınızı çevrimiçi olarak iki tıklamayla kolayca iptal edebilirsiniz. İptal ücreti yoktur - hesabınızı istediğiniz zaman başlatın veya durdurun.</p>
+  
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="accordion">
+      <button class="accordion__btn">Netflix'te ne izleyebilirim?<span class="accordion__icon">+</span></button>
+      <div class="accordion__content">
+        <div class="cont">
+          <p>Netflix, uzun metrajlı filmler, belgeseller, diziler ve programlar, anime, ödüllü Netflix orijinal içerikleri ve daha fazlasından oluşan kapsamlı bir kütüphaneye sahiptir. İstediğiniz her zaman, istediğiniz kadar çok şey izleyin.</p>
+  
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="accordion">
+      <button class="accordion__btn">Netflix çocuklar için uygun mudur? <span class="accordion__icon">+</span></button>
+      <div class="accordion__content">
+        <div class="cont">
+          <p>Üyeliğinize dâhil olan Netflix Çocuk deneyimi, çocukların ailece izlenebilecek dizi ve filmleri kendilerine özel bir alanda izlemelerini sağlarken kontrolü ebeveynlere verir.
+  <br><br>
+            Çocuk profillerinde bulunan PIN korumalı ebeveyn kontrolleri sayesinde, çocukların izleyebileceği içeriklerin yetişkinlik düzeylerini kısıtlayabilir ve onların görmesini istemediğiniz belirli içerikleri engelleyebilirsiniz.</p>
+  
+        </div>
+      </div>
+    </div>
+  
+
+  
+<br>
+    <small>İzlemeye hazır mısınız? Üye olmak ya da hesabınıza tekrar ulaşmak için tek yapmanız gereken e-posta adresinizi girmek.
+<br>
+<br>
+    <div class="wrap">
+      <div class="search1">
+         <input type="text" class="searchTerm" placeholder="E-posta adresi">
+        
+         <button type="submit" class="searchButton">Başlayın
+          
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-mirrorinrtl="true" class="default-ltr-cache-0 e1mhci4z1" data-name="ChevronRight" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.5859 12L8.29303 19.2928L9.70725 20.7071L17.7072 12.7071C17.8948 12.5195 18.0001 12.2652 18.0001 12C18.0001 11.7347 17.8948 11.4804 17.7072 11.2928L9.70724 3.29285L8.29303 4.70706L15.5859 12Z" fill="currentColor"></path></svg>
+        </button>
+      </div>
+   </div>
+
+   </div>
+  </small>
+  <br>
+  <br>
+
+  
+
+  <div class="footer">
+    <h2>Sorularınız mı var? <a href="">0850-390-7444 numaralı </a>telefonu arayın</h2>
+  <div class="row">
+  <div class="col">
+    <a href="#">SSS</a>
+    <a href="#">Medya Merkezi</a>
+    <a href="#">Hediye Kartı Kullanımı</a>
+    <a href="#">Gizlilik</a>
+    <a href="#">Bize Ulaşın</a>
+    <a href="#">Sadece Netflix'te</a>
+  </div>
+  <div class="col">
+    <a href="#">Yardım Merkezi</a>
+    <a href="#">Yatırımcı ilişkileri</a>
+    <a href="#">İzleme Yolları</a>
+    <a href="#">Çerez Tercihleri</a>
+    <a href="#">Hız Testi</a>
+  </div>
+  <div class="col">
+    <a href="#">Hesap</a>
+    <a href="#">İş İmkanları</a>
+    <a href="#">Kullanım Koşulları</a>
+    <a href="#">Kurumsal Bilgiler</a>
+    <a href="#">Yasal Hükümler<button type="radio"></button> </a>
+  
+  </div>
+
+  
+  </div>
+  <br>
+
+<div class="rad">
+
+  
+</div>
+ 
+  <div class="lang-menu">
+
+  
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="width:100px">
+        <label for=""><i style="color:black;" class="bi bi-globe"></i></label>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
+          <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/>
+        </svg>Türkçe
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Türkçe</a></li>
+
+        <li><a class="dropdown-item" href="#">English</a></li>
+       
+    </div>
+        
+  </div>
+<br>
+  <p>Netflix Türkiye</p>
+
+  </div>
+
+  
+    <script>
+    const accordionBtns = document.querySelectorAll(".accordion__btn");
+  
+    accordionBtns.forEach(btn => {
+      btn.addEventListener("click", () => {
+        const accordionContent = btn.nextElementSibling;
+        const accordionIcon = btn.querySelector(".accordion__icon");
+        const isOpen = accordionContent.classList.contains("show");
+  
+        accordionBtns.forEach(otherBtn => {
+          const otherAccordionContent = otherBtn.nextElementSibling;
+          const otherAccordionIcon = otherBtn.querySelector(".accordion__icon");
+  
+          if (otherBtn !== btn) {
+            otherAccordionContent.classList.remove("show");
+            otherAccordionIcon.classList.remove("rotate");
+            otherAccordionContent.style.maxHeight = "0";
+          }
+        });
+  
+        if (!isOpen) {
+          accordionContent.classList.add("show");
+          accordionIcon.classList.add("rotate");
+  
+          // Calculate the actual height of the content and set it as max-height
+          accordionContent.style.maxHeight = accordionContent.scrollHeight + "px";
+        } else {
+          accordionContent.classList.remove("show");
+          accordionIcon.classList.remove("rotate");
+          accordionContent.style.maxHeight = "0";
+        }
+      });
+    });
+  </script>
+   
+</body>
+</html>
+
+  
+  
